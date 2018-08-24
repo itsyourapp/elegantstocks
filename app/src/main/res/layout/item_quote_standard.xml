@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_quoteDetail_container"
+    android:layout_width="match_parent"
+    android:layout_height="216dp"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="2dp"
+    tools:layout_width="200dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_quoteDetail_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/item_quoteDetail_symbol"
+            style="@style/TextAppearance.ElegantStocks.Headline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="GOOG" />
+
+        <TextView
+            android:id="@+id/item_quoteDetail_latestPrice"
+            style="@style/TextAppearance.ElegantStocks.Headline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_quoteDetail_symbol"
+            tools:text="99.21" />
+
+        <TextView
+            android:id="@+id/item_quoteDetail_change"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/item_quoteDetail_chart"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextAppearance.ElegantStocks.Subtitle2"
+            tools:text="+0.08" />
+
+        <TextView
+            android:id="@+id/item_quoteDetail_changePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/item_quoteDetail_change"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextAppearance.ElegantStocks.Subtitle2"
+            tools:text="+0.12%" />
+
+        <app.itsyour.elegantstocks.feature.chart.simple.SimpleChart
+            android:id="@+id/item_quoteDetail_chart"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+

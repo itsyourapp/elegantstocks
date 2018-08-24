@@ -1,0 +1,183 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "da3ccaae9eff176ed36a6633e1daeb17",
+    "entities": [
+      {
+        "tableName": "Quote",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`symbol` TEXT NOT NULL, `companyName` TEXT NOT NULL, `primaryExchange` TEXT NOT NULL, `sector` TEXT NOT NULL, `calculationPrice` TEXT NOT NULL, `open` INTEGER NOT NULL, `openTime` INTEGER NOT NULL, `close` INTEGER NOT NULL, `closeTime` INTEGER NOT NULL, `high` INTEGER, `low` INTEGER, `latestPrice` INTEGER NOT NULL, `latestSource` TEXT NOT NULL, `latestTime` TEXT NOT NULL, `latestUpdate` INTEGER NOT NULL, `latestVolume` INTEGER NOT NULL, `delayedPrice` INTEGER NOT NULL, `delayedPriceTime` INTEGER NOT NULL, `previousClose` INTEGER NOT NULL, `change` REAL NOT NULL, `changePercent` REAL NOT NULL, `marketCap` INTEGER NOT NULL, `peRatio` REAL NOT NULL, `week52High` INTEGER NOT NULL, `week52Low` INTEGER NOT NULL, `ytdChange` REAL NOT NULL, PRIMARY KEY(`symbol`))",
+        "fields": [
+          {
+            "fieldPath": "symbol",
+            "columnName": "symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "companyName",
+            "columnName": "companyName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "primaryExchange",
+            "columnName": "primaryExchange",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sector",
+            "columnName": "sector",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "calculationPrice",
+            "columnName": "calculationPrice",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "open",
+            "columnName": "open",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "openTime",
+            "columnName": "openTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "close",
+            "columnName": "close",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "closeTime",
+            "columnName": "closeTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "high",
+            "columnName": "high",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "low",
+            "columnName": "low",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "latestPrice",
+            "columnName": "latestPrice",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latestSource",
+            "columnName": "latestSource",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latestTime",
+            "columnName": "latestTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latestUpdate",
+            "columnName": "latestUpdate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latestVolume",
+            "columnName": "latestVolume",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "delayedPrice",
+            "columnName": "delayedPrice",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "delayedPriceTime",
+            "columnName": "delayedPriceTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "previousClose",
+            "columnName": "previousClose",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "change",
+            "columnName": "change",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "changePercent",
+            "columnName": "changePercent",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "marketCap",
+            "columnName": "marketCap",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "peRatio",
+            "columnName": "peRatio",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "week52High",
+            "columnName": "week52High",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "week52Low",
+            "columnName": "week52Low",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ytdChange",
+            "columnName": "ytdChange",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "symbol"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"da3ccaae9eff176ed36a6633e1daeb17\")"
+    ]
+  }
+}

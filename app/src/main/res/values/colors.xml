@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2e7d32</color>
+    <color name="primaryLight">#66bb6a</color>
+    <color name="primaryLightWithTint">#BB66bb6a</color>
+    <color name="primaryLightest">#e8f5e9</color>
+    <color name="primaryDark">#1b5e20</color>
+
+    <color name="secondary">#ffc107</color>
+    <color name="secondaryLight">#ffe802</color>
+    <color name="secondaryLightest">#fff8e1</color>
+    <color name="secondaryDark">#ff6f00</color>
+
+    <color name="surfaceLight">#ffffff</color>
+    <color name="surfaceDark">#f1f1f1</color>
+
+    <color name="spaceBlack">#414a4c</color>
+    <color name="skyBlack">#818a8c</color>
+
+    <color name="chartTrendNeutral">@color/skyBlack</color>
+    <color name="chartTrendDown">#fA6868</color>
+    <color name="chartTrendUp">@color/primaryLight</color>
+</resources>

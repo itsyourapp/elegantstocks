@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ElegantStocks" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Core Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorSecondary">@color/secondary</item>
+
+        <!-- Components -->
+        <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar.Colored</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.ElegantStocks.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.ElegantStocks.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.ElegantStocks.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.ElegantStocks.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.ElegantStocks.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.ElegantStocks.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.ElegantStocks.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.ElegantStocks.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.ElegantStocks.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.ElegantStocks.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.ElegantStocks.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.ElegantStocks.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.ElegantStocks.Overline</item>
+    </style>
+</resources>

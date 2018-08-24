@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- MaterialComponent Styles -->
+    <style name="TextAppearance.ElegantStocks.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="TextAppearance.ElegantStocks.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- App Specific Styles -->
+    <style name="CollapsingTextAppearance" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    <style name="CollapsingTextAppearance.Expanded" >
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="CollapsingTextAppearance.Collapsed" >
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/ic_arrow_back</item>
+    </style>
+    <style name="SheetMorphingFab.Item" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:padding">@dimen/sheet_morphing_fab_sheet_item_spacing</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+</resources>

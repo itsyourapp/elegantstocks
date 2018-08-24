@@ -1,0 +1,47 @@
+<resources>
+    <!-- General Strings //-->
+    <string name="error_generic">Something went wrong!</string>
+    <string name="error_nosymbols">Add some symbols to get started!</string>
+
+    <!-- Menu Strings //-->
+    <string name="menu_description">Navigate</string>
+    <string name="menu_quote">Quotes</string>
+    <string name="menu_news">News</string>
+    <string name="menu_privacy">Privacy Policy / Legal</string>
+    <string name="menu_about">About This App</string>
+    <string name="menu_refresh">Refresh</string>
+
+    <!-- Quotes Strings //-->
+    <string name="quotes_error_network">There was a problem with the network, please try again later.</string>
+    <string name="quotes_error_noqueries">No Symbols found</string>
+    <string name="quotes_error_general">Not sure what happened, try again later</string>
+    <string name="quotes_chart_menu_candle">Candle Sticks</string>
+    <string name="quotes_chart_menu_line">Line Chart</string>
+    <string name="quotes_chart_menu_filled">High/Low</string>
+    <string name="quotes_chart_menu_close">High/Low with Close</string>
+
+    <!-- Quote Details Strings //-->
+    <string name="quotedetail_activity">Activity</string>
+    <string name="quotedetail_sector">Sector:</string>
+    <string name="quotedetail_exchange">Exchange:</string>
+    <string name="quotedetail_open">Open:</string>
+    <string name="quotedetail_close">Close:</string>
+    <string name="quotedetail_volume">Volume:</string>
+    <string name="quotedetail_high">High:</string>
+    <string name="quotedetail_low">Low:</string>
+    <string name="quotedetail_price">Price:</string>
+    <string name="quotedetail_updated">Updated:</string>
+    <string name="quotedetail_news">News</string>
+
+    <!-- News Strings //-->
+    <string name="news_title">News</string>
+
+    <!-- Content Descriptions //-->
+    <string name="content_description_quote">Quote</string>
+    <string name="content_description_arrow">Trending</string>
+
+    <!-- Implementation Strings //-->
+    <string name="impl_elegantstocks_intent_title">Elegant Stocks</string>
+    <string name="impl_appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="impl_bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+</resources>
