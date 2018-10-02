@@ -7,31 +7,31 @@ def versionMajor = 1
 def versionMinor = 1
 def versionPatch = project.hasProperty('buildNumber') ? project.getProperties().get('buildNumber').toInteger() : 0
 
-def keystorePropertiesFile = rootProject.file("keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+//def keystorePropertiesFile = rootProject.file("keystore.properties")
+//def keystoreProperties = new Properties()
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            storeFile file("${project.rootDir}/${keystoreProperties['storeFile']}")
-            keyPassword keystoreProperties['keyPassword']
-            storePassword keystoreProperties['storePassword']
-        }
-        staging {
-            keyAlias keystoreProperties['keyAlias']
-            storeFile file("${project.rootDir}/${keystoreProperties['storeFile']}")
-            keyPassword keystoreProperties['keyPassword']
-            storePassword keystoreProperties['storePassword']
-        }
-        beta {
-            keyAlias keystoreProperties['keyAlias']
-            storeFile file("${project.rootDir}/${keystoreProperties['storeFile']}")
-            keyPassword keystoreProperties['keyPassword']
-            storePassword keystoreProperties['storePassword']
-        }
-    }
+//    signingConfigs {
+//        release {
+//            keyAlias keystoreProperties['keyAlias']
+//            storeFile file("${project.rootDir}/${keystoreProperties['storeFile']}")
+//            keyPassword keystoreProperties['keyPassword']
+//            storePassword keystoreProperties['storePassword']
+//        }
+//        staging {
+//            keyAlias keystoreProperties['keyAlias']
+//            storeFile file("${project.rootDir}/${keystoreProperties['storeFile']}")
+//            keyPassword keystoreProperties['keyPassword']
+//            storePassword keystoreProperties['storePassword']
+//        }
+//        beta {
+//            keyAlias keystoreProperties['keyAlias']
+//            storeFile file("${project.rootDir}/${keystoreProperties['storeFile']}")
+//            keyPassword keystoreProperties['keyPassword']
+//            storePassword keystoreProperties['storePassword']
+//        }
+//    }
 
     compileSdkVersion 28
     defaultConfig {
@@ -56,20 +56,20 @@ android {
     buildTypes {
         release {
             resValue "string", "app_name", "Elegant Stocks"
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-release.pro'
         }
         staging {
             resValue "string", "app_name", "Elegant Stocks"
-            signingConfig signingConfigs.staging
+//            signingConfig signingConfigs.staging
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-staging.pro'
         }
         beta {
-            signingConfig signingConfigs.beta
+//            signingConfig signingConfigs.beta
             debuggable true
             minifyEnabled false
             applicationIdSuffix ".beta"

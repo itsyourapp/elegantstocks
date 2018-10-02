@@ -5,9 +5,12 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import app.itsyour.elegantstocks.R
+import app.itsyour.elegantstocks.R.id.news_loadingFrame
+import app.itsyour.elegantstocks.R.id.news_newsList
 import app.itsyour.elegantstocks.feature.base.BaseFragment
 import app.itsyour.elegantstocks.feature.navigator.Navigator
 import app.itsyour.elegantstocks.feature.navigator.NavigatorActivity

@@ -6,6 +6,8 @@ import android.view.View
 import androidx.recyclerview.widget.OrientationHelper
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import app.itsyour.elegantstocks.R
+import app.itsyour.elegantstocks.R.id.quotes_loadingFrame
+import app.itsyour.elegantstocks.R.id.quotes_symbolsList
 import app.itsyour.elegantstocks.feature.base.BaseFragment
 import app.itsyour.elegantstocks.feature.navigator.Navigator
 import app.itsyour.elegantstocks.feature.navigator.NavigatorActivity
